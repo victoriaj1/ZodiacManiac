@@ -2,7 +2,8 @@
 import java.util.Date;
 public class ZodiacManiacWest {
 	
-	private String westZod(Date userBDay) {
+	public String westZod(int bday, int bmon) {
+		Date userBDay = new Date(1, bmon, bday);
 		String zWAnswer = "";
 		Date firstRange = new Date(1, 1, 20);
 		Date secRange = new Date(1, 2, 18);
