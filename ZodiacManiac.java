@@ -6,9 +6,9 @@ public class ZodiacManiac {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter your birthday: ");
 		int bday = sc.nextInt();
-		System.out.println("Enter your birthmonth: ");
+		System.out.println("Enter your birth month: ");
 		int bmon = sc.nextInt();
-		System.out.println("Enter your birthyear: ");
+		System.out.println("Enter your birth year: ");
 		int year = sc.nextInt();
 		ZodiacManiacWest west = new ZodiacManiacWest();
 		eZodiac east = new eZodiac();
