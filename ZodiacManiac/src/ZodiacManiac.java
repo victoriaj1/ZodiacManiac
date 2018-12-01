@@ -48,7 +48,7 @@ public class ZodiacManiac {
 		
 		
 		
-		ZodiacManiacWest west = new ZodiacManiacWest();
+		wZodiac west = new wZodiac();
 		eZodiac east = new eZodiac();
 		System.out.println("Your western Zodiac: " + west.westZod(bday, bmon));
 		System.out.println();
