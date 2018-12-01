@@ -1,6 +1,6 @@
 //Diane was responsible for this code
 import java.util.Date;
-public class ZodiacManiacWest {
+public class wZodiac {
 	
 	public String westZod(int bday, int bmon) {
 		Date userBDay = new Date(1, bmon, bday);
