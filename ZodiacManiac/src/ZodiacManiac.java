@@ -1,4 +1,3 @@
-//Maria’s part of ZodiacManiac
 import java.util.Scanner;
 
 public class ZodiacManiac {
@@ -10,6 +9,7 @@ public class ZodiacManiac {
 		
 		do {
 		System.out.println("Enter your birth year: ");
+		year = sc.nextInt();
 		if(year%4!=0) {
 			if(year%100==0) {
 				if(year%400!=0) {
@@ -25,10 +25,11 @@ public class ZodiacManiac {
 			}
 		}
 		while(year<1900);
-		int year = sc.nextInt();
+		
 		
 		do{
 		System.out.println("Enter your birth month: ");
+		bmon = sc.nextInt();
 			if(bmon>12||bmon<1) {
 			System.out.println("Please reenter with a valid integer.");
 			}
@@ -36,13 +37,15 @@ public class ZodiacManiac {
 		while(bmon>12||bmon<1);
 		bmon = sc.nextInt();
 		
+		do {
 		System.out.println("Enter your birth date: ");
+		bday = sc.nextInt();
 			if(bmonth[bmon-1]<bday||bday<1) {
 				System.out.println("Please reenter with a valid integer.");
 			}
 		}
 		while(bmonth[bmon-1]<bday||bday<1);
-		int bday = sc.nextInt();
+		
 		
 		
 		ZodiacManiacWest west = new ZodiacManiacWest();
@@ -53,4 +56,3 @@ public class ZodiacManiac {
 		east.eZod(year);
 	}//end of main class
 }//end of ZodiacManiac class
-//end of Maria’s part
