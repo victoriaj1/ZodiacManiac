@@ -5,7 +5,7 @@ public class ZodiacManiac {
 		Scanner sc = new Scanner(System.in);
 		
 		int[] bmonth = {31,28,31,30,31,30,31,31,31,30,31,30,31};
-		char q1;int bmon, bday, year; boolean leapy=false;
+		int bmon, bday, year; boolean leapy=false;
 		
 		do {
 		System.out.println("Enter your birth year: ");
@@ -35,7 +35,7 @@ public class ZodiacManiac {
 			}
 		}
 		while(bmon>12||bmon<1);
-		bmon = sc.nextInt();
+		
 		
 		do {
 		System.out.println("Enter your birth date: ");
