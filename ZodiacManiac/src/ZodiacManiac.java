@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 public class ZodiacManiac {
 	public static void main (String[] args){
+		System.out.println("Welcome to Zodiac Maniac. Enter your information below to find out your Eastern and Western Zodiac Information.");
 		Scanner sc = new Scanner(System.in);
 
 		//reference # of days in each month
@@ -10,7 +11,7 @@ public class ZodiacManiac {
 		int bmon=0, bday=0, year=0; boolean leapy=false;
 
 		//while loop for birth year
-		while(year<1) {
+		while(year<1900||year>2018) {
 			System.out.println("Enter your birth year: ");
 
 			//keep looping until input is integer
@@ -24,7 +25,7 @@ public class ZodiacManiac {
 				}
 				catch(Exception e) {
 					//if input isn't integer, ask for new input
-					System.out.print("Type an Integer");
+					System.out.print("You have typed in a wrong character. Please type in a 4 digit Integer. \r\n");
 				}
 			}
 			while(year==0);
@@ -40,14 +41,14 @@ public class ZodiacManiac {
 			}
 			
 			//if bday isn't valid, prompt for new input
-			if(year<1){
-				System.out.println("Please reenter with a valid integer.");
+			if(year<1900||year>2018){
+				System.out.println("Error. Please enter a valid 4 digit year.\r\n");
 			}
 		}
 
 		//while loop for birth month
 		while(bmon>12||bmon<1) {	
-			System.out.println("Enter your birth month: ");
+			System.out.println("Enter your birth month as an integer (Ex: July would be 07): ");
 
 			 //keep looping until input is integer
 			do{
@@ -60,14 +61,14 @@ public class ZodiacManiac {
 				}
 				catch(Exception e) {
 					 //if input isn't integer, ask for new input
-					System.out.print("Type an Integer");
+					System.out.print("Enter your birth month as an integer (Ex: July would be 07):");
 				}
 			}
 			while(bmon==0);
 			
 			//if bmon isn't valid, prompt for new input
 			if(bmon>12||bmon<1) {
-				System.out.println("Please reenter with a valid integer.");
+				System.out.println(">rror. Please reenter with a valid integer.\r\n");
 			}
 		}
 
@@ -86,14 +87,14 @@ public class ZodiacManiac {
 				}
 				catch(Exception e) {
 					//if input isn't integer, ask for new input
-					System.out.print("Type an Integer");
+					System.out.print("You have input a wrong value. Please type a two digit integer. \r\n");
 				}
 			}
 			while(bday==0);
 			
 			//if bday isn't valid, prompt for new input
 			if(bmonth[bmon-1]<bday||bday<1) {
-				System.out.println("Please reenter with a valid integer.");
+				System.out.println("Error. Please reenter with a valid integer.\r\n");
 			}
 		}
 
