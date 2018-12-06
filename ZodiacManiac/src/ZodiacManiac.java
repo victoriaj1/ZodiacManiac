@@ -10,7 +10,7 @@ public class ZodiacManiac {
 		int bmon=0, bday=0, year=0; boolean leapy=false;
 
 		//while loop for birth year
-		while(year<1900||year>2018) {
+		while(year<1) {
 			System.out.println("Enter your birth year: ");
 
 			//keep looping until input is integer
@@ -40,7 +40,7 @@ public class ZodiacManiac {
 			}
 			
 			//if bday isn't valid, prompt for new input
-			if(year<1900||year>2018){
+			if(year<1){
 				System.out.println("Please reenter with a valid integer.");
 			}
 		}
