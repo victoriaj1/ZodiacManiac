@@ -11,7 +11,7 @@ public class ZodiacManiac {
 		int bmon=0, bday=0, year=0; boolean leapy=false;
 
 		//while loop for birth year
-		while(year<1900||year>2018) {
+		while(year<1) {
 			System.out.println("Enter your birth year: ");
 
 			//keep looping until input is integer
@@ -40,9 +40,9 @@ public class ZodiacManiac {
 				bmonth[1]=29;
 			}
 			
-			//if bday isn't valid, prompt for new input
-			if(year<1900||year>2018){
-				System.out.println("Error. Please enter a valid 4 digit year.\r\n");
+			//if byear isn't valid, prompt for new input
+			if(year<1){
+				System.out.println("Error. Please enter a valid year.\r\n");
 			}
 		}
 
@@ -68,7 +68,7 @@ public class ZodiacManiac {
 			
 			//if bmon isn't valid, prompt for new input
 			if(bmon>12||bmon<1) {
-				System.out.println(">rror. Please reenter with a valid integer.\r\n");
+				System.out.println("Error. Please reenter with a valid integer.\r\n");
 			}
 		}
 
