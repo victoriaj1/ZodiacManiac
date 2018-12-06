@@ -4,6 +4,7 @@ public class wZodiac {
 	
 	public String westZod(int bday, int bmon) {
 		Date userBDay = new Date(1, bmon, bday);
+		Date userBDayy = new Date(2, bmon, bday);
 		String zWAnswer = "";
 		Date firstRange = new Date(1, 1, 20);
 		Date secRange = new Date(1, 2, 18);
@@ -32,7 +33,7 @@ public class wZodiac {
 			
 		
 		//Aquarius
-		String zAquarius = "Strengths: Progressive, original, independent, humanitarian\r\n" + 
+		String zAquarius = "You are an Aquarius!\r\nStrengths: Progressive, original, independent, humanitarian\r\n" + 
 				"Weaknesses: Runs from emotional expression, temperamental, uncompromising, aloof\r\n" + 
 				"\r\n" + 
 				"Aquarius likes: Fun with friends, helping others, fighting for causes, intellectual conversation, a good listener\r\n" + 
@@ -61,7 +62,7 @@ public class wZodiac {
 
 		
 		//Pisces
-		String zPisces = "Strengths: Compassionate, artistic, intuitive, gentle, wise, musical\r\n" +  
+		String zPisces = "You are a Pisces!\r\nStrengths: Compassionate, artistic, intuitive, gentle, wise, musical\r\n" +  
 				"Weaknesses: Fearful, overly trusting, sad, desire to escape reality, can be a victim or a martyr\r\n" + 
 				"\r\n" + 
 				"Pisces likes: Being alone, sleeping, music, romance, visual media, swimming, spiritual themes\r\n" + 
@@ -81,7 +82,7 @@ public class wZodiac {
 
 		
 		//Aries
-		String zAries = "Strengths: Courageous, determined, confident, enthusiastic, optimistic, honest, passionate\r\n" + 
+		String zAries = "You are an Aries!\r\nStrengths: Courageous, determined, confident, enthusiastic, optimistic, honest, passionate\r\n" + 
 				"Weaknesses: Impatient, moody, short-tempered, impulsive, aggressive\r\n" + 
 				"\r\n" + 
 				"Aries likes: Comfortable clothes, taking on leadership roles, physical challenges, individual sports\r\n" + 
@@ -112,7 +113,7 @@ public class wZodiac {
 		
 	
 		//Taurus
-		String zTaurus = "Strengths: Reliable, patient, practical, devoted, responsible, stable\r\n" + 
+		String zTaurus = "You are a Tarus!\r\nStrengths: Reliable, patient, practical, devoted, responsible, stable\r\n" + 
 				"Weaknesses: Stubborn, possessive, uncompromising\r\n" + 
 				"\r\n" + 
 				"Taurus likes: Gardening, cooking, music, romance, high quality clothes, working with hands\r\n" + 
@@ -143,7 +144,7 @@ public class wZodiac {
 
 		
 		//Gemini
-		String zGemini = "Strengths: Gentle, affectionate, curious, adaptable, ability to learn quickly and exchange ideas\r\n" + 
+		String zGemini = "You are a Gemini!\r\nStrengths: Gentle, affectionate, curious, adaptable, ability to learn quickly and exchange ideas\r\n" + 
 				"Weaknesses: Nervous, inconsistent, indecisive\r\n" + 
 				"\r\n" + 
 				"Gemini likes: Music, books, magazines, chats with nearly anyone, short trips around the town\r\n" + 
@@ -176,7 +177,7 @@ public class wZodiac {
 
 		
 		//Cancer
-		String zCancer = "Strengths: Tenacious, highly imaginative, loyal, emotional, sympathetic, persuasive \r\n" + 
+		String zCancer = "You are a Cancer!\r\nStrengths: Tenacious, highly imaginative, loyal, emotional, sympathetic, persuasive \r\n" + 
 				"Weaknesses: Moody, pessimistic, suspicious, manipulative, insecure\r\n" + 
 				"\r\n"+
 				"Cancer likes: Art, home-based hobbies, relaxing near or in water, helping loved ones, a good meal with friends\r\n" + 
@@ -202,7 +203,7 @@ public class wZodiac {
 		
 		
 		//Leo
-		String zLeo = "Strengths: Creative, passionate, generous, warm-hearted, cheerful, humorous\r\n" + 
+		String zLeo = "You are a Leo!\r\nStrengths: Creative, passionate, generous, warm-hearted, cheerful, humorous\r\n" + 
 				"Weaknesses: Arrogant, stubborn, self-centered, lazy, inflexible\r\n" + 
 				"\r\n" + 
 				"Leo likes: Theater, taking holidays, being admired, expensive things, bright colors, fun with friends\r\n" + 
@@ -228,7 +229,7 @@ public class wZodiac {
 		
 
 		//Virgo
-		String zVirgo = "Strengths: Loyal, analytical, kind, hardworking, practical\r\n" +  
+		String zVirgo = "You are a Virgo!\r\nStrengths: Loyal, analytical, kind, hardworking, practical\r\n" +  
 				"Weaknesses: Shyness, worry, overly critical of self and others, all work and no play\r\n" + 
 				"\r\n" + 
 				"Virgo likes: Animals, healthy food, books, nature, cleanliness\r\n" + 
@@ -256,7 +257,7 @@ public class wZodiac {
 		
 
 		//Libra
-		String zLibra = "Strengths: Cooperative,diplomatic, gracious, fair-minded, social\r\n" + 
+		String zLibra = "You are a Libra!\r\nStrengths: Cooperative,diplomatic, gracious, fair-minded, social\r\n" + 
 				"Weaknesses: Indecisive, avoids confrontations, will carry a grudge, self-pity\r\n" + 
 				"\r\n" + 
 				"Libra likes: Harmony, gentleness, sharing with others, the outdoors\r\n" + 
@@ -286,7 +287,7 @@ public class wZodiac {
 		
 		
 		//Scorpio
-		String zScorpio = "Strengths: Resourceful, brave, passionate, stubborn, a true friend\r\n" + 
+		String zScorpio = "You are a Scorpio!\r\nStrengths: Resourceful, brave, passionate, stubborn, a true friend\r\n" + 
 				"Weaknesses: Distrusting, jealous, secretive, violent\r\n" + 
 				"\r\n" + 
 				"Scorpio likes: Truth, facts, being right, longtime friends, teasing, a grand passion\r\n" + 
@@ -312,7 +313,7 @@ public class wZodiac {
 		
 
 		//Sagittarius
-		String zSagittarius = "Strengths: Generous, idealistic, great sense of humor\r\n" + 
+		String zSagittarius = "You are a Sagittarius!\r\nStrengths: Generous, idealistic, great sense of humor\r\n" + 
 				"Weaknesses: Promises more than can deliver, very impatient, will say anything no matter how undiplomatic\r\n" + 
 				"\r\n" + 
 				"Sagittarius likes: Freedom, travel, philosophy, being outdoors\r\n" + 
@@ -334,7 +335,7 @@ public class wZodiac {
 		
 		
 		//Capricorn
-		String zCapricorn = "Strengths: Responsible, disciplined, self-control, good managers\r\n" + 
+		String zCapricorn = "You are a Capricorn!\r\nStrengths: Responsible, disciplined, self-control, good managers\r\n" + 
 				"Weaknesses: Know-it-all, unforgiving, condescending, expecting the worst\r\n" + 
 				"\r\n" + 
 				"Capricorn likes: Family, tradition, music, understated status, quality craftsmanship\r\n" + 
@@ -398,6 +399,9 @@ public class wZodiac {
 			zWAnswer= zSagittarius;
 		}
 		else if (twentthreeRange.compareTo(userBDay) * userBDay.compareTo(twentfourRange) >= 0) {
+			zWAnswer= zCapricorn;
+		}
+		else if (twentthreeRange.compareTo(userBDayy) * userBDayy.compareTo(twentfourRange) >= 0) {
 			zWAnswer= zCapricorn;
 		}
 		return zWAnswer;
