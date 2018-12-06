@@ -8,7 +8,7 @@ public class ZodiacManiac {
 		//reference # of days in each month
 		int[] bmonth = {31,28,31,30,31,30,31,31,31,30,31,30,31};
 		
-		int bmon=0, bday=0, year=0; boolean leapy=false;
+		int bmon=-1, bday=-1, year=-1; boolean leapy=false;
 
 		//while loop for birth year
 		while(year<1) {
@@ -20,7 +20,7 @@ public class ZodiacManiac {
 				try {
 					//assign user input to syear
 					String syear = sc.next();
-					//locate integer in syear
+					//attempt to convert string to int
 					year=Integer.parseInt(syear);
 				}
 				catch(Exception e) {
@@ -28,7 +28,7 @@ public class ZodiacManiac {
 					System.out.print("You have typed in a wrong character. Please type in a 4 digit Integer. \r\n");
 				}
 			}
-			while(year==0);
+			while(year==-1);
 			
 			//check if year is leap year
 			if((year%4==0) && (year%100!=0)||(year%400==0)){
@@ -56,7 +56,7 @@ public class ZodiacManiac {
 				try {
 					//assign user input to string sbmon
 					String sbmon = sc.next();
-					//find integer in sbmon
+					//attempt to convert string to int
 					bmon=Integer.parseInt(sbmon);
 				}
 				catch(Exception e) {
@@ -64,7 +64,7 @@ public class ZodiacManiac {
 					System.out.print("Enter your birth month as an integer (Ex: July would be 07):");
 				}
 			}
-			while(bmon==0);
+			while(bmon==-1);
 			
 			//if bmon isn't valid, prompt for new input
 			if(bmon>12||bmon<1) {
@@ -82,7 +82,7 @@ public class ZodiacManiac {
 				try {
 					//assign user input to string sbday
 					String sbday = sc.next();
-					 //find integer in sbday
+					 //attempt to convert string to int
 					bday=Integer.parseInt(sbday);
 				}
 				catch(Exception e) {
@@ -90,7 +90,7 @@ public class ZodiacManiac {
 					System.out.print("You have input a wrong value. Please type a two digit integer. \r\n");
 				}
 			}
-			while(bday==0);
+			while(bday==-1);
 			
 			//if bday isn't valid, prompt for new input
 			if(bmonth[bmon-1]<bday||bday<1) {
