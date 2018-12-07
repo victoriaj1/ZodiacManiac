@@ -28,8 +28,14 @@ public class ZodiacManiac {
 					System.out.print("You have typed in a wrong character. Please type in a 4 digit Integer. \r\n");
 				}
 			}
+			//if byear isn't valid, prompt for new input
 			while(year==-1);
 			
+			if(year<1){
+				System.out.println("Error. Please enter a valid year.\r\n");
+			}
+		}
+		
 			//check if year is leap year
 			if((year%4==0) && (year%100!=0)||(year%400==0)){
 				leapy=true;
@@ -40,12 +46,6 @@ public class ZodiacManiac {
 				bmonth[1]=29;
 			}
 			
-			//if byear isn't valid, prompt for new input
-			if(year<1){
-				System.out.println("Error. Please enter a valid year.\r\n");
-			}
-		}
-
 		//while loop for birth month
 		while(bmon>12||bmon<1) {	
 			System.out.println("Enter your birth month as an integer (Ex: July would be 07): ");
