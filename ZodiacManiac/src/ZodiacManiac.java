@@ -97,14 +97,18 @@ public class ZodiacManiac {
 				System.out.println("Error. Please reenter with a valid integer.\r\n");
 			}
 		}
-
-		wZodiac west = new wZodiac();
-		eZodiac east = new eZodiac();
-		System.out.println("Your western Zodiac: " + west.westZod(bday, bmon));
-		System.out.println();
-		east.setYear(year);
-		System.out.println("Your eastern Zodiac: " );
-		east.eZod();
-
+	//creates a new object to call western zodiac
+	wZodiac west = new wZodiac();
+	//creates a new object to call eastern zodiac
+	eZodiac east = new eZodiac();
+	//uses object to call westZod function and prints out designated western zodiac
+	System.out.println("Your western Zodiac: " + west.westZod(bday, bmon));
+	//inserts empty line
+	System.out.println();
+	//sets the year
+	east.setYear(year);
+	//uses object to call eastZod function and prints out designated eastern zodiac
+	System.out.println("Your eastern Zodiac: ");
+ 	east.eZod();
 	}//end of main class
 }//end of ZodiacManiac class
