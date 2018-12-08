@@ -74,7 +74,7 @@ public class ZodiacManiac {
 
 		//while loop for birth date
 		while(bmonth[bmon-1]<bday||bday<1) {
-			System.out.println("Enter your birth date: ");
+			System.out.println("Enter your day of birth: ");
 
 			//keep looping until input is integer
 			do{
@@ -87,7 +87,7 @@ public class ZodiacManiac {
 				}
 				catch(Exception e) {
 					//if input isn't integer, ask for new input
-					System.out.print("You have input a wrong value. Please type a two digit integer. \r\n");
+					System.out.print("You have input a wrong value. Please type an integer. \r\n");
 				}
 			}
 			while(bday==-1);
