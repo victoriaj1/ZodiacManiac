@@ -103,7 +103,8 @@ public class ZodiacManiac {
 		System.out.println("Your western Zodiac: " + west.westZod(bday, bmon));
 		System.out.println();
 		System.out.println("Your eastern Zodiac: " );
-		east.eZod(year);
+		east.setYear(year);
+		east.eZod();
 
 	}//end of main class
 }//end of ZodiacManiac class
