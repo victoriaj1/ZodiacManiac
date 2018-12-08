@@ -1,5 +1,10 @@
 public class eZodiac {
 
+	private int year;
+	
+	void setYear(int myear) {
+		year=myear;
+	}
 	
 	String zRat = "\r\nPersonality:\r\n"
 			+ "With strong intuition and quick response, they always easily adapt themselves to a new environment. \r\n"
@@ -284,7 +289,7 @@ public class eZodiac {
 	//reference for zodiac data: https://www.chinahighlights.com/travelguide/chinese-zodiac/
 	
 	//method to print out birth year's corresponding zodiac info
-	void eZod(int year) {
+	void eZod(){
 		//assign year to corresponding case
 		year=year%12-3;
 		//account for negative year
